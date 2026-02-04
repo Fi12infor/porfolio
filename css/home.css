@@ -64,12 +64,16 @@ main .cta a.sobre-mi-btn:hover {
 .logros {
   padding: 4rem 3rem;
   display: flex;
-  gap: 2rem;
   flex-direction: column;
+}
+
+.logros p {
+  width: 56rem;
 }
 
 .logros .cards {
   display: flex;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -94,5 +98,6 @@ main .cta a.sobre-mi-btn:hover {
 
 .logros .cards .card img {
   width: 20rem;
+  max-height: 14rem;
   border-radius: 0.5rem;
 }
