@@ -17,16 +17,21 @@ main {
 .proyectos .cards {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
 .proyectos .cards .card {
+  flex: 0 0 calc(33.333% - 1rem);
   background-color: white;
   padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .proyectos .cards .card h3 {
@@ -37,11 +42,39 @@ main {
   color: var(--color-texto);
   font-size: 0.9rem;
   margin-bottom: 2rem;
-  width: 24rem;
+  width: 29rem;
+  height: 4rem;
+  text-align: center;
 }
 
 .proyectos .cards .card img {
-  width: 20rem;
-  max-height: 14rem;
+  width: 28rem;
+  max-height: 16rem;
   border-radius: 0.5rem;
+}
+
+.proyectos .cards .card .btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.proyectos .cards .card .btns a.live-btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  color: white;
+  background-color: var(--color-primario);
+  transition: all 0.3s;
+}
+.proyectos .cards .card .btns a.code-btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  color: white;
+  background-color: var(--color-secundario);
+  transition: all 0.3s;
 }
