@@ -103,3 +103,23 @@ main .cta a.sobre-mi-btn:hover {
   max-height: 14rem;
   border-radius: 0.5rem;
 }
+
+/* Estilos para la sección de sobre mi */
+.sobre-mi {
+  padding: 4rem 6rem;
+}
+
+.sobre-mi p {
+  width: 54rem;
+  margin-top: 0.6rem;
+}
+
+.sobre-mi .skills {
+  position: absolute;
+  right: 2rem;
+  margin-right: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
