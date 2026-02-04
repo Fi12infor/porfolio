@@ -96,11 +96,12 @@ main .cta a.sobre-mi-btn:hover {
   font-size: 0.9rem;
   margin-bottom: 2rem;
   width: 24rem;
+  height: 3rem;
 }
 
 .logros .cards .card img {
   width: 20rem;
-  max-height: 14rem;
+  max-height: 10rem;
   border-radius: 0.5rem;
 }
 
