@@ -13,12 +13,12 @@ html {
 /* variables de colores */
 :root {
   --color-primario: #108eef;
-  --color-primario-hover: #0d6bb3;
+  --color-primario-hover: #0b72c3;
   --color-secundario: #3ae9ef;
-  --color-secundario-hover: #20979e;
+  --color-secundario-hover: #1aaeb5;
   --color-accento: #071d6d;
   --color-fondo: #f5f5f5;
-  --header-fondo: #e7e5e5ba;
+  --header-fondo: rgba(231, 229, 229, 0.73);
   --color-texto: #333333;
 }
 
@@ -27,6 +27,9 @@ header {
   padding: 0.6rem 2rem;
   background-color: var(--header-fondo);
   color: var(--color-texto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header nav {
