@@ -1,10 +1,10 @@
 /* variables de colores */
 :root {
   --color-primario: #108eef;
-  --color-primario-hover: #0b72c3;
   --color-secundario: #3ae9ef;
+  --color-acento: #071d6d;
+  --color-primario-hover: #0b72c3;
   --color-secundario-hover: #1aaeb5;
-  --color-accento: #071d6d;
   --color-fondo: #f5f5f5;
   --header-fondo: rgba(231, 229, 229, 0.73);
   --color-texto: #333333;
