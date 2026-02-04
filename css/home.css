@@ -13,7 +13,7 @@
 /* Estilos específicos para la página de inicio */
 /* Estilos para el hero */
 main {
-  padding: 4rem 3rem;
+  padding: 8rem 4rem;
 }
 
 main p {
@@ -106,20 +106,23 @@ main .cta a.sobre-mi-btn:hover {
 
 /* Estilos para la sección de sobre mi */
 .sobre-mi {
-  padding: 4rem 6rem;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .sobre-mi p {
   width: 60rem;
   margin-top: 0.6rem;
+  text-align: center;
 }
 
-.sobre-mi .skills {
-  position: absolute;
-  right: 2rem;
-  margin-right: 8rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.sobre-mi h3 {
   margin-top: 2rem;
+}
+
+.sobre-mi .techs {
+  margin-top: 1rem;
 }
