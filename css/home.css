@@ -21,13 +21,13 @@ main p {
   width: 56rem;
 }
 
-main .cta {
+main .btns {
   margin-top: 3rem;
   gap: 1rem;
   display: flex;
 }
 
-main .cta a.proyectos-btn {
+main .btns a.proyectos-btn {
   text-decoration: none;
   background-color: var(--color-primario);
   color: white;
@@ -37,7 +37,7 @@ main .cta a.proyectos-btn {
   transition: all 0.3s;
 }
 
-main .cta a.sobre-mi-btn {
+main .btns a.sobre-mi-btn {
   text-decoration: none;
   border: 1px solid black;
   color: var(--color-texto);
@@ -48,12 +48,12 @@ main .cta a.sobre-mi-btn {
 }
 
 /* Efectos hover para los botones */
-main .cta a.proyectos-btn:hover {
+main .btns a.proyectos-btn:hover {
   background-color: var(--color-primario-hover);
   transform: scale(1.05);
 }
 
-main .cta a.sobre-mi-btn:hover {
+main .btns a.sobre-mi-btn:hover {
   background-color: var(--color-secundario-hover);
   color: white;
   border: none;
