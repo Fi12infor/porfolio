@@ -1,0 +1,63 @@
+/* variables de colores */
+:root {
+  --color-principal: #25a3ff;
+  --text-color: #131b2e;
+  --text-secundary: #404753;
+  --text-pills: #57657a;
+  --text-pills-dark: #447fb5;
+  --dark-text-color: #e2e2e6;
+  --dark-text-secundary: #c4c6cf;
+  --light-bg: #faf8ff;
+  --dark-bg: #0f1115;
+  --light-card-bg: #f2f3ff;
+  --light-pills: #d5e3fc;
+  --dark-card-bg: #1a1c1e;
+  --dark-pills: #33353a;
+  --light-bg-header: #efeff2;
+  --dark-bg-header: #101216;
+  --light-header-border: #c0c7d5;
+  --dark-header-border: #1b1e22;
+  --btn-gradient: linear-gradient(
+    144deg,
+    rgba(77, 171, 255, 1) 0%,
+    rgba(37, 99, 235, 1) 100%
+  );
+}
+
+footer {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--light-bg-header);
+  padding: 0.8rem 3rem;
+  border-radius: 12px;
+  border: 1px solid var(--light-header-border);
+}
+
+footer .info {
+  display: flex;
+  justify-content: space-between;
+  width: 97rem;
+}
+
+footer .info .links {
+  display: flex;
+  gap: 2rem;
+}
+
+footer .info .links a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* --- Dark Mode --- */
+.dark footer {
+  background: var(--dark-bg-header);
+  border: 1px solid var(--dark-header-border);
+}
+
+.dark footer .links a {
+  color: var(--dark-text-color);
+}

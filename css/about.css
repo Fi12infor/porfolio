@@ -24,49 +24,56 @@
   );
 }
 
-/* Estilos específicos para la página de inicio */
-/* Estilos para el hero */
-.hero {
-  margin: 8.4rem auto;
-  display: grid;
-  grid-template-columns: repeat(2, 0.3fr);
-  width: fit-content;
+/* Estilos sección sobre mi */
+
+.sobre-mi {
+  width: 98rem;
+  margin: 10rem auto;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-top: 6rem;
+.sobre-mi h2 {
+  font-size: 2.4rem;
   color: var(--text-color);
 }
 
-.hero .rol {
-  margin-top: 0.2rem;
-  width: 56rem;
-  font-size: 1.3rem;
+.sobre-mi p {
   color: var(--text-secundary);
+  width: 80rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
 }
 
-.hero .description {
-  margin-top: 1rem;
-  width: 37rem;
-  color: var(--text-secundary);
-}
-
-.hero .ilustracion img {
-  width: 40rem;
-}
-
-.hero .btns {
-  margin-top: 3rem;
-  gap: 2rem;
+.techs-pills {
   display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.techs-pills .pill {
+  padding: 0.5rem 2rem;
+  background: var(--light-pills);
+  color: var(--text-pills);
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+.sobre-mi .btn {
+  width: fit-content;
+  margin-top: 3rem;
 }
 
 /* --- Dark Mode --- */
-.dark .hero h1 {
+.dark .sobre-mi h2 {
   color: var(--dark-text-color);
 }
 
-.dark .hero p {
+.dark .sobre-mi p {
   color: var(--dark-text-secundary);
+}
+
+.dark .techs-pills .pill {
+  background: var(--dark-pills);
+  color: var(--text-pills-dark);
 }

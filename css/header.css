@@ -1,0 +1,130 @@
+/* Importación de fuentes desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Estilos globales */
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* desplazamiento suave al hacer clic en enlaces internos */
+  background-color: var(--light-bg);
+  font-family: "Montserrat", sans-serif;
+}
+
+/* variables de colores */
+:root {
+  --color-principal: #25a3ff;
+  --text-color: #131b2e;
+  --text-secundary: #404753;
+  --text-pills: #57657a;
+  --text-pills-dark: #447fb5;
+  --dark-text-color: #e2e2e6;
+  --dark-text-secundary: #c4c6cf;
+  --light-bg: #faf8ff;
+  --dark-bg: #0f1115;
+  --light-card-bg: #f2f3ff;
+  --light-pills: #d5e3fc;
+  --dark-card-bg: #1a1c1e;
+  --dark-pills: #33353a;
+  --light-bg-header: #efeff2;
+  --dark-bg-header: #101216;
+  --light-header-border: #c0c7d5;
+  --dark-header-border: #1b1e22;
+  --btn-gradient: linear-gradient(
+    144deg,
+    rgba(77, 171, 255, 1) 0%,
+    rgba(37, 99, 235, 1) 100%
+  );
+}
+
+/* Estilos Barra de navegación */
+header {
+  width: fit-content;
+  padding: 0.7rem 2.1rem;
+  border-radius: 12px;
+  background: rgba(239, 239, 242, 0.45);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--light-header-border);
+  color: var(--color-texto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0.8rem auto;
+  box-shadow: rgba(0, 0, 0, 0.095) 1px 1px 2px 1px;
+  position: fixed;
+  top: 0;
+  left: 37.6%;
+  z-index: 100;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+  width: fit-content;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+
+header nav a:hover {
+  scale: 1.1;
+  color: var(--color-principal);
+}
+
+#navbar .active {
+  color: var(--color-principal);
+  font-weight: 700;
+}
+
+/* Estilos Darkmode Button */
+.modes-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: var(--light-card-bg);
+  box-shadow: rgba(0, 0, 0, 0.095) 1px 1px 2px 1px;
+  border-radius: 12px;
+  padding: 0.1rem 0.35rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.modes-btn:hover {
+  scale: 1.07;
+}
+
+.modes-btn .lightmode.active {
+  display: none;
+}
+
+.modes-btn .darkmode.active {
+  display: none;
+}
+
+/* --- Dark Mode --- */
+.dark header {
+  background-color: var(--dark-header-border);
+  border: 1px solid var(--dark-header-border);
+  color: var(--dark-text-color);
+
+  box-shadow: rgba(190, 190, 190, 0.095) 1px 1px 2px 1px;
+}
+
+.dark header nav a {
+  text-decoration: none;
+  color: var(--dark-text-color);
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+
+.dark .modes-btn {
+  background: var(--dark-card-bg);
+  box-shadow: rgba(85, 85, 85, 0.095) 1px 1px 2px 1px;
+}

@@ -1,0 +1,144 @@
+/* variables de colores */
+:root {
+  --color-principal: #25a3ff;
+  --text-color: #131b2e;
+  --text-secundary: #404753;
+  --text-pills: #57657a;
+  --text-pills-dark: #447fb5;
+  --dark-text-color: #e2e2e6;
+  --dark-text-secundary: #c4c6cf;
+  --light-bg: #faf8ff;
+  --dark-bg: #0f1115;
+  --light-card-bg: #f2f3ff;
+  --light-pills: #d5e3fc;
+  --dark-card-bg: #1a1c1e;
+  --dark-pills: #33353a;
+  --light-bg-header: #efeff2;
+  --dark-bg-header: #101216;
+  --light-header-border: #c0c7d5;
+  --dark-header-border: #1b1e22;
+  --btn-gradient: linear-gradient(
+    144deg,
+    rgba(77, 171, 255, 1) 0%,
+    rgba(37, 99, 235, 1) 100%
+  );
+}
+
+/* Estilos específicos para la página de contacto  */
+
+main {
+  margin: 8.4rem auto;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+form {
+  background-color: rgb(248, 248, 248);
+  padding: 2rem;
+  width: 60rem;
+  border-radius: 12px;
+  -webkit-box-shadow: 4px 3px 32px -20.5px #000000;
+  -moz-box-shadow: 4px 3px 32px -20.5px #000000;
+  box-shadow: 4px 3px 32px -20.5px #000000;
+}
+
+form .user-info {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+form .user-info .name {
+  width: 28rem;
+}
+
+form .user-info .email {
+  width: 28rem;
+}
+
+textarea.form-control.contact-textarea {
+  min-height: 140px;
+  resize: vertical;
+  background: var(--light-bg-header);
+  color: var(--text-color);
+}
+
+main h1 {
+  color: var(--text-color);
+}
+
+main .description {
+  color: var(--text-secundary);
+}
+
+form {
+  background: var(--light-card-bg);
+}
+
+form .form-floating input {
+  background: var(--light-bg-header);
+  color: var(--text-color);
+}
+
+form .form-floating label {
+  color: var(--text-color);
+}
+
+form .form-select {
+  background: var(--light-bg-header);
+  color: var(--text-color);
+}
+
+form .form-select option {
+  background: var(--light-bg-header);
+  color: var(--text-color);
+}
+
+#submitBtn {
+  margin-top: 1rem;
+}
+
+/* --- Dark Mode --- */
+
+.dark form {
+  background: var(--dark-card-bg);
+}
+
+.dark main h1 {
+  color: var(--dark-text-color);
+}
+
+.dark main .description {
+  color: var(--dark-text-secundary);
+}
+
+.dark textarea.form-control.contact-textarea {
+  min-height: 140px;
+  resize: vertical;
+  background: var(--dark-bg-header);
+  color: var(--dark-text-color);
+}
+
+.dark form {
+  background: var(--dark-card-bg);
+}
+
+.dark form .form-floating input {
+  background: var(--dark-bg-header);
+  color: var(--dark-text-color);
+}
+
+.dark form .form-floating label {
+  color: var(--dark-text-color);
+}
+
+.dark form .form-select {
+  background: var(--dark-bg-header);
+  color: var(--dark-text-color);
+}
+
+.dark form .form-select option {
+  background: var(--dark-bg-header);
+  color: var(--dark-text-color);
+}

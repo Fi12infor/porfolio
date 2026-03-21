@@ -1,54 +1,99 @@
 /* Importación de fuentes desde Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 /* Estilos globales */
 * {
   margin: 0;
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth; /* desplazamiento suave al hacer clic en enlaces internos */
-  background-color: var(--color-fondo);
-  font-family: "Montserrat", sans-serif;
+  background-color: var(--light-bg);
+  font-family: "Manrope", sans-serif;
 }
 
 /* variables de colores */
 :root {
-  --color-primario: #108eef;
-  --color-secundario: #3ae9ef;
-  --color-acento: #071d6d;
-  --color-primario-hover: #0b72c3;
-  --color-secundario-hover: #1aaeb5;
-  --color-fondo: #f5f5f5;
-  --header-fondo: rgba(231, 229, 229, 0.73);
-  --color-texto: #333333;
+  --color-principal: #25a3ff;
+  --text-color: #131b2e;
+  --text-secundary: #404753;
+  --text-pills: #57657a;
+  --text-pills-dark: #447fb5;
+  --dark-text-color: #e2e2e6;
+  --dark-text-secundary: #c4c6cf;
+  --light-bg: #faf8ff;
+  --dark-bg: #0f1115;
+  --light-card-bg: #f2f3ff;
+  --light-pills: #d5e3fc;
+  --dark-card-bg: #1a1c1e;
+  --dark-pills: #33353a;
+  --light-bg-header: #efeff2;
+  --dark-bg-header: #101216;
+  --light-header-border: #c0c7d5;
+  --dark-header-border: #1b1e22;
+  --btn-gradient: linear-gradient(
+    144deg,
+    rgba(77, 171, 255, 1) 0%,
+    rgba(37, 99, 235, 1) 100%
+  );
 }
 
-/* Estilos Barra de navegación */
-header {
-  padding: 0.8rem 2rem;
-  background-color: var(--header-fondo);
-  color: var(--color-texto);
+/* Estilos Darkmode Button */
+.darkmode-btn {
   display: flex;
-  align-items: center;
+}
+
+.darkmode-btn .lightmode {
+  display: none;
+}
+
+.darkmode-btn .lightmode .active {
+  background: red;
+}
+/* Estilso generales de botones */
+
+.btn {
+  display: flex;
   justify-content: center;
-}
-
-header nav {
-  display: flex;
-  gap: 1.5rem;
-  width: fit-content;
-}
-
-header nav a {
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
   text-decoration: none;
-  color: var(--color-texto);
-  font-weight: 500;
-  transition: all 0.3s;
+  gap: 0.6rem;
 }
 
-header nav a:hover {
-  scale: 1.1;
-  color: black;
+.btn-primary {
+  background: var(--btn-gradient);
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  box-shadow: rgba(24, 24, 24, 0.151) 1px 1px 2px 1px;
 }
 
-/* Estilos Footer */
+.btn-primary:hover {
+  scale: 1.05;
+}
+
+.btn-secundary:hover {
+  scale: 1.05;
+  color: var(--color-principal);
+  font-weight: 600;
+  border: 1px solid var(--light-header-border);
+}
+
+.btn-secundary {
+  color: var(--color-principal);
+  font-weight: 600;
+  border: 2px solid var(--light-header-border);
+  transition: all 0.5s ease-in-out;
+}
+
+/* --- Dark Mode --- */
+body.dark,
+html.dark {
+  background: var(--dark-bg);
+  color: var(--dark-text-color);
+}
+
+.dark .btn-secundary {
+  border: 2px solid var(--dark-header-border);
+}
