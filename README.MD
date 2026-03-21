@@ -7,7 +7,7 @@
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
 
 Este proyecto es mi portfolio personal como estudiante enfocado al desarrollo de software.  
-Su objetivo es mostrar mis proyectos, habilidades técnicas y facilitar el contacto con empresas o profesionales interesados en mi perfil.
+Su objetivo principal es mostrar mis proyectos y habilidades técnicas.
 
 ---
 
@@ -17,7 +17,7 @@ El portfolio está diseñado para:
 
 - Mostrar de forma clara mis proyectos y trabajos.
 - Reflejar mis habilidades en desarrollo frontend y sistemas.
-- Servir como punto de contacto para oportunidades laborales o colaboraciones.
+- Servir como punto de contacto.
 
 ---
 
@@ -49,7 +49,7 @@ El portfolio está diseñado para:
 
 ## 📌 Estado del proyecto
 
-Actualmente en desarrollo y mejora continua.
+Actualmente activo y desplegado, con mejoras continuas y futuras ampliaciones de contenido.
 
 ---
 
@@ -62,4 +62,4 @@ Me interesa crear soluciones funcionales, bien diseñadas y seguir mejorando mis
 
 ## 📬 Contacto
 
-Puedes contactarme a través del formulario del portfolio o mediante LinkedIn.
+Puedes contactarme a través del formulario del portfolio.
