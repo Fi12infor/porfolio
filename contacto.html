@@ -18,20 +18,21 @@
 <body>
     <!-- Barra de navegación -->
     <header>
+        <button class="mobile-menu" id="mobileBtn">
+            &#9776;
+        </button>
         <nav id="navbar">
             <a href="./index.html">Inicio</a>
             <a href="#scrollspyHeading1">Sobre mí</a>
             <a href="#scrollspyHeading2">Proyectos</a>
             <a href="./contacto.html">Contacto</a>
-            <button class="mobile-menu">
-                &#9776;
-            </button>
-            <ul class="mobile-links">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="#scrollspyHeading1">Sobre mí</a></li>
-                <li><a href="#scrollspyHeading2">Proyectos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        </nav>
+
+        <nav class="mobile-links" id="mobileNav">
+            <a href="./index.html">Inicio</a>
+            <a href="#scrollspyHeading1">Sobre mí</a>
+            <a href="#scrollspyHeading2">Proyectos</a>
+            <a href="./contacto.html">Contacto</a>
         </nav>
         <button class="modes-btn" id="theme-btn">
             <div class="darkmode">
@@ -80,9 +81,9 @@
             <div class="form-floating mb-3">
                 <textarea class="form-control contact-textarea" placeholder="Leave a comment here" id="floatingTextarea"
                     name="message"></textarea>
-                <label for="floatingTextarea">Mensaje</label>
+                <label for="floatingTextarea" class="text-area-label">Mensaje</label>
             </div>
-            <input type="text" name="botcheck" className="sr-only" />
+            <input type="text" name="botcheck" className="sr-only" style="display: none;" />
             <div class="h-captcha" data-captcha="true" id="captcha"></div>
             <button type="submit" class="btn btn-primary" id="submitBtn">Contactar</button>
         </form>

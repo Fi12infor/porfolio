@@ -99,6 +99,11 @@ form .form-select option {
   margin-top: 1rem;
 }
 
+.form-floating > label::after {
+  display: none !important;
+  content: none !important;
+}
+
 /* --- Dark Mode --- */
 
 .dark form {
@@ -141,4 +146,83 @@ form .form-select option {
 .dark form .form-select option {
   background: var(--dark-bg-header);
   color: var(--dark-text-color);
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  main {
+    margin: 8.4rem auto;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  form {
+    background-color: rgb(248, 248, 248);
+    padding: 2rem;
+    width: 20rem;
+    border-radius: 12px;
+    -webkit-box-shadow: 4px 3px 32px -20.5px #000000;
+    -moz-box-shadow: 4px 3px 32px -20.5px #000000;
+    box-shadow: 4px 3px 32px -20.5px #000000;
+  }
+
+  form .user-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  form .user-info .name {
+    width: 16rem;
+  }
+
+  form .user-info .email {
+    width: 16rem;
+  }
+
+  textarea.form-control.contact-textarea {
+    min-height: 140px;
+    resize: vertical;
+    background: var(--light-bg-header);
+    color: var(--text-color);
+  }
+
+  main h1 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+
+  main .description {
+    color: var(--text-secundary);
+    width: 19rem;
+  }
+
+  form {
+    background: var(--light-card-bg);
+  }
+
+  form .form-floating input {
+    background: var(--light-bg-header);
+    color: var(--text-color);
+  }
+
+  form .form-floating label {
+    color: var(--text-color);
+  }
+
+  form .form-select {
+    background: var(--light-bg-header);
+    color: var(--text-color);
+  }
+
+  form .form-select option {
+    background: var(--light-bg-header);
+    color: var(--text-color);
+  }
+
+  #submitBtn {
+    margin-top: 1rem;
+  }
 }

@@ -66,13 +66,14 @@ header nav {
   width: fit-content;
 }
 
-header nav .mobile-menu {
+header .mobile-menu {
   display: none;
   background-color: transparent;
 }
 
-header nav .mobile-links {
+header .mobile-links {
   display: none;
+  color: var(--text-color);
 }
 
 header nav a {
@@ -118,10 +119,6 @@ header nav a:hover {
   display: none;
 }
 
-header nav .mobile-menu {
-  color: var(--text-color);
-}
-
 /* --- Dark Mode --- */
 .dark header {
   background-color: var(--dark-header-border);
@@ -143,7 +140,17 @@ header nav .mobile-menu {
   box-shadow: rgba(85, 85, 85, 0.095) 1px 1px 2px 1px;
 }
 
-.dark header nav .mobile-menu {
+.dark header .mobile-menu {
+  color: var(--dark-text-color);
+}
+
+.dark .mobile-links {
+  background: var(--dark-bg-header);
+  border: 1px solid var(--dark-header-border);
+  box-shadow: rgba(0, 0, 0, 0.15) 0 8px 20px;
+}
+
+.mobile-links a {
   color: var(--dark-text-color);
 }
 
@@ -155,7 +162,6 @@ header nav .mobile-menu {
     padding: 0.7rem 1rem;
     gap: 1rem;
     justify-content: space-between;
-    margin: 0;
     position: fixed;
     top: 0;
     left: 50%;
@@ -174,18 +180,41 @@ header nav .mobile-menu {
     display: none;
   }
 
-  header nav .mobile-menu {
+  header .mobile-menu {
     display: flex;
     border: none;
     background-color: transparent;
   }
 
-  header .nav .mobile-links {
+  .mobile-links {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 16rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    background: var(--light-bg-header);
+    border: 1px solid var(--light-header-border);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 8px 20px;
+    z-index: 2000;
   }
 
-  header nav .mobile-links.active {
-    /* Añadir estilos */
-    border: red;
+  .mobile-links.active {
+    display: flex;
+  }
+
+  .mobile-links a {
+    display: flex;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .mobile-links a:last-child {
+    border-bottom: none;
   }
 }
