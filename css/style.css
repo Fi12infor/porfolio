@@ -38,18 +38,6 @@ body {
   );
 }
 
-/* Estilos Darkmode Button */
-.darkmode-btn {
-  display: flex;
-}
-
-.darkmode-btn .lightmode {
-  display: none;
-}
-
-.darkmode-btn .lightmode .active {
-  background: red;
-}
 /* Estilso generales de botones */
 
 .btn {
@@ -96,4 +84,43 @@ html.dark {
 
 .dark .btn-secundary {
   border: 2px solid var(--dark-header-border);
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.7rem;
+    border-radius: 12px;
+    text-decoration: none;
+    gap: 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .btn-primary {
+    background: var(--btn-gradient);
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    box-shadow: rgba(24, 24, 24, 0.151) 1px 1px 2px 1px;
+  }
+
+  .btn-primary:hover {
+    scale: 1.05;
+  }
+
+  .btn-secundary:hover {
+    scale: 1.05;
+    color: var(--color-principal);
+    font-weight: 600;
+    border: 1px solid var(--light-header-border);
+  }
+
+  .btn-secundary {
+    color: var(--color-principal);
+    font-weight: 600;
+    border: 2px solid var(--light-header-border);
+    transition: all 0.5s ease-in-out;
+  }
 }

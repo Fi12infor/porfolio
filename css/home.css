@@ -41,14 +41,14 @@
 
 .hero .rol {
   margin-top: 0.2rem;
-  width: 56rem;
+  width: 18rem;
   font-size: 1.3rem;
   color: var(--text-secundary);
 }
 
 .hero .description {
   margin-top: 1rem;
-  width: 37rem;
+  width: 18rem;
   color: var(--text-secundary);
 }
 
@@ -69,4 +69,48 @@
 
 .dark .hero p {
   color: var(--dark-text-secundary);
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  body {
+    width: 20rem;
+    margin: 0 auto;
+  }
+  .hero {
+    display: flex;
+    width: fit-content;
+    margin: 4rem auto;
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+    width: fit-content;
+    margin-top: 4rem;
+  }
+
+  .hero .rol {
+    margin-top: 0.2rem;
+    width: 18rem;
+    font-size: 1.3rem;
+    color: var(--text-secundary);
+  }
+
+  .hero .description {
+    margin-top: 1rem;
+    width: 22rem;
+    color: var(--text-secundary);
+  }
+
+  .hero .btns {
+    margin-top: 3rem;
+    gap: 2rem;
+    display: flex;
+    margin-bottom: 4rem;
+  }
+
+  .hero .ilustracion img {
+    width: 20rem;
+  }
 }

@@ -20,9 +20,18 @@
     <header>
         <nav id="navbar">
             <a href="./index.html">Inicio</a>
-            <a href="./index.html#scrollspyHeading1">Sobre mí</a>
-            <a href="./index.html#scrollspyHeading2">Proyectos</a>
+            <a href="#scrollspyHeading1">Sobre mí</a>
+            <a href="#scrollspyHeading2">Proyectos</a>
             <a href="./contacto.html">Contacto</a>
+            <button class="mobile-menu">
+                &#9776;
+            </button>
+            <ul class="mobile-links">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#scrollspyHeading1">Sobre mí</a></li>
+                <li><a href="#scrollspyHeading2">Proyectos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
         </nav>
         <button class="modes-btn" id="theme-btn">
             <div class="darkmode">
@@ -73,6 +82,7 @@
                     name="message"></textarea>
                 <label for="floatingTextarea">Mensaje</label>
             </div>
+            <input type="text" name="botcheck" className="sr-only" />
             <div class="h-captcha" data-captcha="true" id="captcha"></div>
             <button type="submit" class="btn btn-primary" id="submitBtn">Contactar</button>
         </form>
@@ -83,6 +93,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="./js/form.js"></script>
+    <script src="./js/responsiveMenu.js"></script>
 </body>
 
 </html>
