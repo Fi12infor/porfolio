@@ -183,6 +183,7 @@ header nav a:hover {
   header .mobile-menu {
     display: flex;
     border: none;
+    font-size: 1.3rem;
     background-color: transparent;
   }
 
