@@ -29,8 +29,13 @@
 .hero {
   margin: 8.4rem auto;
   display: grid;
+  gap: 20rem;
   grid-template-columns: repeat(2, 0.3fr);
   width: fit-content;
+}
+
+.hero .principal {
+  width: 30rem;
 }
 
 .hero h1 {
