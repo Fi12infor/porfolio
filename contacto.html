@@ -48,19 +48,21 @@
         <h1>Contacto</h1>
         <p class="description">Disponible para incorporarme a equipos y proyectos en el ámbito del desarrollo y
             sistemas.</p>
-        <form action="https://api.web3forms.com/submit" method="POST" class="form-floating">
+        <form action="https://api.web3forms.com/submit" method="POST" class="form-floating" id="form">
             <input type="hidden" name="access_key" value="6643e89e-adfb-435c-98fa-8513692c2867">
-            <input type="hidden" name="from_name" value="Portfolio">
+            <input type="hidden" name="from_name" value="Portfolio - Contacto Form">
             <div class="user-info">
                 <div class="form-floating mb-3 name">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="nombre:" required
+                    <input type="text" class="form-control input-name" id="floatingInput" placeholder="nombre:" required
                         name="name">
                     <label for="floatingInput">Nombre</label>
+                    <p id="messageName"></p>
                 </div>
                 <div class="form-floating mb-3 email">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required
-                        name="email">
+                    <input type="email" class="form-control input-email" id="floatingInput"
+                        placeholder="name@example.com" name="email">
                     <label for="floatingInput">Correo Electronico</label>
+                    <p id="messageEmail"></p>
                 </div>
 
             </div>

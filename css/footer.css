@@ -51,6 +51,12 @@ footer .info .links {
 footer .info .links a {
   color: var(--text-secundary);
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .info .links a:hover {
+  color: var(--text-color);
+  scale: 1.1;
 }
 
 /* --- Dark Mode --- */

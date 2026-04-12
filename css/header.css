@@ -26,8 +26,8 @@ html {
   --light-pills: #d5e3fc;
   --dark-card-bg: #1a1c1e;
   --dark-pills: #33353a;
-  --light-bg-header: #efeff2;
-  --dark-bg-header: #101216;
+  --light-bg-header: rgba(239, 239, 242, 0.45);
+  --dark-bg-header: rgba(32, 32, 32, 0.11);
   --light-header-border: #c0c7d5;
   --dark-header-border: #1b1e22;
   --btn-gradient: linear-gradient(
@@ -121,10 +121,9 @@ header nav a:hover {
 
 /* --- Dark Mode --- */
 .dark header {
-  background-color: var(--dark-header-border);
+  background: var(--dark-bg-header);
   border: 1px solid var(--dark-header-border);
   color: var(--dark-text-color);
-
   box-shadow: rgba(190, 190, 190, 0.095) 1px 1px 2px 1px;
 }
 

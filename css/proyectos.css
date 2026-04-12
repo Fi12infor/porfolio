@@ -146,8 +146,8 @@
 
   .proyectos p {
     color: var(--text-secundary);
-    width: 22rem;
-    font-size: 1.2rem;
+    width: 20rem;
+    font-size: 0.9rem;
     margin-top: 1rem;
   }
 
