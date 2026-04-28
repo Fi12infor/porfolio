@@ -6,7 +6,7 @@
   --text-pills: #57657a;
   --text-pills-dark: #447fb5;
   --dark-text-color: #e2e2e6;
-  --dark-text-secundary: #c4c6cf;
+  --dark-text-secundary: #8d8e96;
   --light-bg: #faf8ff;
   --dark-bg: #0f1115;
   --light-card-bg: #f2f3ff;
@@ -49,14 +49,15 @@ footer .info .links {
 }
 
 footer .info .links a {
-  color: var(--text-secundary);
+  color: var(--dark-text-secundary);
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 footer .info .links a:hover {
-  color: var(--text-color);
-  scale: 1.1;
+  color: var(--dark-text-color);
+  font-weight: 650;
+  scale: 1.08;
 }
 
 /* --- Dark Mode --- */

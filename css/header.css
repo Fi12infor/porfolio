@@ -19,15 +19,15 @@ html {
   --text-pills: #57657a;
   --text-pills-dark: #447fb5;
   --dark-text-color: #e2e2e6;
-  --dark-text-secundary: #c4c6cf;
+  --dark-text-secundary: #8d8e96;
   --light-bg: #faf8ff;
   --dark-bg: #0f1115;
   --light-card-bg: #f2f3ff;
   --light-pills: #d5e3fc;
   --dark-card-bg: #1a1c1e;
   --dark-pills: #33353a;
-  --light-bg-header: rgba(239, 239, 242, 0.45);
-  --dark-bg-header: rgba(32, 32, 32, 0.11);
+  --light-bg-header: #efeff2;
+  --dark-bg-header: #101216;
   --light-header-border: #c0c7d5;
   --dark-header-border: #1b1e22;
   --btn-gradient: linear-gradient(
