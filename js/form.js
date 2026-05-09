@@ -11,7 +11,7 @@ const emailRegex = /^[a-zA-Z0-9._%+-]{2,}@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 form.addEventListener("submit", function (e) {
   const emailValue = email.value.trim();
   const nameValue = name.value.trim();
-  valid = true;
+  let valid = true;
 
   if (nameValue.length < 3 || nameValue.length > 20) {
     messageName.textContent = "El nombre debe tener entre 3 y 20 caracteres";
