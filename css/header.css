@@ -43,8 +43,7 @@ header {
   padding: 0.7rem 2.1rem;
   border-radius: 12px;
   background: rgba(239, 239, 242, 0.45);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); /* Efecto de desenfoque */
   border: 1px solid var(--light-header-border);
   color: var(--color-texto);
   display: flex;
