@@ -24,7 +24,7 @@ html {
   --dark-bg: #0f1115;
   --light-card-bg: #f2f3ff;
   --light-pills: #d5e3fc;
-  --dark-card-bg: #1a1c1e;
+  --dark-card-bg: #2e3235;
   --dark-pills: #33353a;
   --light-bg-header: #efeff2;
   --dark-bg-header: #101216;
@@ -136,7 +136,7 @@ header nav a:hover {
 
 .dark .modes-btn {
   background: var(--dark-card-bg);
-  box-shadow: rgba(85, 85, 85, 0.095) 1px 1px 2px 1px;
+  box-shadow: rgba(100, 100, 100, 0.095) 1px 1px 2px 1px;
 }
 
 .dark header .mobile-menu {
