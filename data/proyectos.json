@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "title": "Página de precios responsive",
+    "description": "Desarrollo de una página web responsive con diseño moderno y estructura clara, utilizando HTML y CSS. Implementada a partir de un diseño de Frontend Mentor.",
+    "technologies": ["HTML", "CSS"],
+    "image": "https://ismartin.com/img/proyectos/proyecto1.png",
+    "github": "https://github.com/Fi12infor/single-prince-page",
+    "demo": "https://fi12infor.github.io/single-prince-page/"
+  }
+]
