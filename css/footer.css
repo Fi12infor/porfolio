@@ -49,13 +49,13 @@ footer .info .links {
 }
 
 footer .info .links a {
-  color: var(--dark-text-secundary);
+  color: var(--text-secundary);
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 footer .info .links a:hover {
-  color: var(--dark-text-color);
+  color: var(--text-color);
   font-weight: 650;
   scale: 1.08;
 }
