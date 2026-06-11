@@ -6,6 +6,33 @@
     "technologies": ["HTML", "CSS"],
     "image": "https://ismartin.com/img/proyectos/proyecto1.png",
     "github": "https://github.com/Fi12infor/single-prince-page",
-    "demo": "https://fi12infor.github.io/single-prince-page/"
+    "web": "https://fi12infor.github.io/single-prince-page/"
+  },
+  {
+    "id": 2,
+    "title": "Página de resumen de pedido responsive",
+    "description": "Desarrollé una página web responsive de resumen de pedido utilizando HTML y CSS. El proyecto está basado en un diseño de Frontend Mentor y se centra en la creación de una interfaz clara, moderna y adaptable a diferentes dispositivos.",
+    "technologies": ["HTML", "CSS"],
+    "image": "https://ismartin.com/img/proyectos/proyecto2.png",
+    "github": "https://github.com/Fi12infor/Primer-examen-APW",
+    "web": "https://fi12infor.github.io/Primer-examen-APW/"
+  },
+  {
+    "id": 3,
+    "title": "Plataforma de centralización de enlaces",
+    "description": "Desarrollé una web responsive orientada a centralizar todos mis enlaces en un único espacio accesible. El sistema permite a cualquier usuario acceder de forma rápida, clara y optimizada a mi contenido digital.",
+    "technologies": ["React", "TailwindCSS", "JavaScript"],
+    "image": "https://ismartin.com/img/proyectos/linkhub.png",
+    "github": "https://github.com/imardev/react-linkhub",
+    "web": "https://links.ismartin.com/"
+  },
+  {
+    "id": 4,
+    "title": "Página de vista previa de estadísticas responsive",
+    "description": "Desarrollé una página web responsive de vista previa de estadísticas utilizando HTML y CSS. El proyecto está basado en un diseño de Frontend Mentor y se centra en la creación de una interfaz moderna, clara y adaptable a distintos dispositivos.",
+    "technologies": ["HTML", "CSS"],
+    "image": "https://ismartin.com/img/proyectos/proyecto3.png",
+    "github": "https://github.com/Fi12infor/segundo-examen-APW",
+    "web": "https://fi12infor.github.io/segundo-examen-APW/"
   }
 ]
