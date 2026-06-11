@@ -29,6 +29,7 @@
 .sobre-mi {
   width: 98rem;
   margin: 10rem auto;
+  scroll-margin-top: 90px;
 }
 
 .sobre-mi h2 {

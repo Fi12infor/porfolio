@@ -27,6 +27,7 @@
 .proyectos {
   width: 98rem;
   margin: 8rem auto;
+  scroll-margin-top: 90px;
 }
 
 .proyectos h2 {
