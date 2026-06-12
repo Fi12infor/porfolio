@@ -86,6 +86,7 @@
     display: flex;
     width: fit-content;
     margin: 4rem auto;
+    gap: 3.2rem;
     flex-direction: column;
   }
 
