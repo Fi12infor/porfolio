@@ -4,6 +4,21 @@ const darkModeIcon = document.querySelector(".darkmode");
 const lightModeIcon = document.querySelector(".lightmode");
 const mode = localStorage.getItem("theme");
 
+// Función para cambiar el modo
+function changueMode() {
+  darkModeIcon.classList.toggle("active");
+  lightModeIcon.classList.toggle("active");
+  btn.classList.toggle("active");
+  document.documentElement.classList.toggle("dark");
+  document.body.classList.toggle("dark");
+
+  if (document.documentElement.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
 // Codigo principal
 // Detectar si en el localstorage tiene el theme con dark
 if (mode === "dark") {
@@ -20,16 +35,4 @@ if (!btn.classList.contains("active")) {
 }
 
 // Detectamos el evento del click en el boton y cuando pulse añadimos dark o light
-btn.addEventListener("click", () => {
-  darkModeIcon.classList.toggle("active");
-  lightModeIcon.classList.toggle("active");
-  btn.classList.toggle("active");
-  document.documentElement.classList.toggle("dark");
-  document.body.classList.toggle("dark");
-
-  if (document.documentElement.classList.contains("dark")) {
-    localStorage.setItem("theme", "dark");
-  } else {
-    localStorage.setItem("theme", "light");
-  }
-});
+btn.addEventListener("click", () => changueMode());
