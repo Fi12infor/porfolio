@@ -5,8 +5,8 @@
     "description": "Desarrollo de una página web responsive con diseño moderno y estructura clara, utilizando HTML y CSS. Implementada a partir de un diseño de Frontend Mentor.",
     "technologies": ["HTML", "CSS"],
     "image": "https://ismartin.com/img/proyectos/proyecto1.png",
-    "github": "https://github.com/Fi12infor/single-prince-page",
-    "web": "https://fi12infor.github.io/single-prince-page/"
+    "github": "https://github.com/imardev/single-prince-page",
+    "web": "https://imardev.github.io/single-prince-page/"
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "description": "Desarrollé una página web responsive de resumen de pedido utilizando HTML y CSS. El proyecto está basado en un diseño de Frontend Mentor y se centra en la creación de una interfaz clara, moderna y adaptable a diferentes dispositivos.",
     "technologies": ["HTML", "CSS"],
     "image": "https://ismartin.com/img/proyectos/proyecto2.png",
-    "github": "https://github.com/Fi12infor/Primer-examen-APW",
-    "web": "https://fi12infor.github.io/Primer-examen-APW/"
+    "github": "https://github.com/imardev/Primer-examen-APW",
+    "web": "https://imardev.github.io/Primer-examen-APW/"
   },
   {
     "id": 3,
@@ -32,7 +32,7 @@
     "description": "Desarrollé una página web responsive de vista previa de estadísticas utilizando HTML y CSS. El proyecto está basado en un diseño de Frontend Mentor y se centra en la creación de una interfaz moderna, clara y adaptable a distintos dispositivos.",
     "technologies": ["HTML", "CSS"],
     "image": "https://ismartin.com/img/proyectos/proyecto3.png",
-    "github": "https://github.com/Fi12infor/segundo-examen-APW",
-    "web": "https://fi12infor.github.io/segundo-examen-APW/"
+    "github": "https://github.com/imardev/segundo-examen-APW",
+    "web": "https://imardev.github.io/segundo-examen-APW/"
   }
 ]
