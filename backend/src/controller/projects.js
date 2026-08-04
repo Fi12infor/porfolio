@@ -1,5 +1,6 @@
 import { Router } from "express";
 import prisma from "../config/prisma.js";
+import { requireAdmin } from "../middleware.js";
 
 const projectRouter = Router();
 
@@ -31,7 +32,7 @@ projectRouter.get("/", async (req, res) => {
   }
 });
 
-projectRouter.post("/", async (req, res) => {
+projectRouter.post("/", requireAdmin, async (req, res) => {
   const {
     title,
     slug,
@@ -152,7 +153,7 @@ projectRouter.get("/:id", async (req, res) => {
   }
 });
 
-projectRouter.patch("/:id", async (req, res) => {
+projectRouter.patch("/:id", requireAdmin, async (req, res) => {
   const {
     title,
     slug,
