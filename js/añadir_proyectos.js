@@ -1,21 +1,21 @@
 async function FetchProjects() {
-    const res = await fetch("../data/proyectos.json")
-    const data = res.json()
-    return data
+  const res = await fetch("../data/proyectos.json");
+  const data = res.json();
+  return data;
 }
 
 async function LoadProjects() {
-    const proyectos = await FetchProjects()
-    const proyectosContainer = document.getElementById("projectSection")
-    const stackPillContainer = document.querySelectorAll(".stackPill")
-    proyectos.forEach(proyecto => {
-        proyectosContainer.innerHTML += `
+  const proyectos = await FetchProjects();
+  const proyectosContainer = document.getElementById("projectSection");
+  const stackPillContainer = document.querySelectorAll(".stackPill");
+  proyectos.forEach((proyecto) => {
+    proyectosContainer.innerHTML += `
         <div class="card" key="${proyecto.id}">
             <img src="${proyecto.image}" alt="">
             <div class="stack" id="stackPill">
-                ${proyecto.technologies.map((tech) => `<div class="stack-pill pill1">${tech}</div>`)
-                .join("")
-                }
+                ${proyecto.technologies
+                  .map((tech) => `<div class="stack-pill pill1">${tech}</div>`)
+                  .join("")}
             </div>
             <div class="details">
                 <h3 class="title">${proyecto.title}</h3>
@@ -45,8 +45,8 @@ async function LoadProjects() {
                 </a>
             </div>
         </div>
-        `
-    });
+        `;
+  });
 }
 
-LoadProjects()
+LoadProjects();

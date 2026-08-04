@@ -27,7 +27,7 @@
 /* Estilos específicos para la página de inicio */
 /* Estilos para el hero */
 .hero {
-  margin: 8.4rem auto;
+  margin: 12.8rem auto 0;
   display: grid;
   gap: 20rem;
   grid-template-columns: repeat(2, 0.3fr);
