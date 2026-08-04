@@ -1,6 +1,10 @@
 async function FetchProjects() {
-  const res = await fetch("../data/proyectos.json");
-  const data = res.json();
+  const res = await fetch("http://localhost:3001/api/projects/");
+  if (!res.ok) {
+    throw new Error(`HTTP ${res.status}`);
+  }
+
+  const data = await res.json();
   return data;
 }
 
@@ -9,22 +13,26 @@ async function LoadProjects() {
   const proyectosContainer = document.getElementById("projectSection");
   const stackPillContainer = document.querySelectorAll(".stackPill");
   proyectos.forEach((proyecto) => {
+    console.log(proyecto.technologies);
     proyectosContainer.innerHTML += `
         <div class="card" key="${proyecto.id}">
-            <img src="${proyecto.image}" alt="">
+            <img src="${proyecto.imageUrl}" alt="">
             <div class="stack" id="stackPill">
                 ${proyecto.technologies
-                  .map((tech) => `<div class="stack-pill pill1">${tech}</div>`)
+                  .map(
+                    (tech) =>
+                      `<div class="stack-pill pill1">${tech.technology.name}</div>`,
+                  )
                   .join("")}
             </div>
             <div class="details">
                 <h3 class="title">${proyecto.title}</h3>
                 <p class="description">
-                    ${proyecto.description}
+                    ${proyecto.shortDescription}
                 </p>
             </div>
             <div class="btns">
-                <a href="${proyecto.web}" class="btn btn-primary" target="_blank">
+                <a href="${proyecto.demoUrl}" class="btn btn-primary" target="_blank">
                     Ver Web
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -34,7 +42,7 @@ async function LoadProjects() {
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                     </svg>
                 </a>
-                <a href="${proyecto.github}" class="btn btn-secundary" target="_blank">
+                <a href="${proyecto.repositoryUrl}" class="btn btn-secundary" target="_blank">
                     Ver Codigo
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
