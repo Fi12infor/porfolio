@@ -1,11 +1,11 @@
 import { Router } from "express";
-import prisma from "../config/prisma.js";
+import { createPrisma } from "../config/prisma.js";
 import { requireAdmin } from "../middleware/middleware.js";
-import { publicApiLimiter } from "../middleware/rateLimit.js";
 
 const projectRouter = Router();
 
-projectRouter.get("/", publicApiLimiter, async (req, res) => {
+projectRouter.get("/", async (req, res) => {
+  const prisma = createPrisma();
   try {
     const projects = await prisma.project.findMany({
       where: {
@@ -34,6 +34,7 @@ projectRouter.get("/", publicApiLimiter, async (req, res) => {
 });
 
 projectRouter.post("/", requireAdmin, async (req, res) => {
+  const prisma = createPrisma();
   const {
     title,
     slug,
@@ -125,7 +126,8 @@ projectRouter.post("/", requireAdmin, async (req, res) => {
   }
 });
 
-projectRouter.get("/:id", publicApiLimiter, async (req, res) => {
+projectRouter.get("/:id", async (req, res) => {
+  const prisma = createPrisma();
   const id = Number(req.params.id);
 
   if (!Number.isInteger(id)) {
@@ -155,6 +157,7 @@ projectRouter.get("/:id", publicApiLimiter, async (req, res) => {
 });
 
 projectRouter.patch("/:id", requireAdmin, async (req, res) => {
+  const prisma = createPrisma();
   const {
     title,
     slug,
