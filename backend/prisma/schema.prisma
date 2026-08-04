@@ -1,7 +1,54 @@
-// prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+
+}
+
 datasource db {
-  provider  = "postgresql"
-  url  	    = env("DATABASE_URL")
-  // uncomment next line if you use Prisma <5.10
-  // directUrl = env("DATABASE_URL_UNPOOLED")
+  provider = "postgresql"
+}
+
+model Project {
+  id               Int     @id @default(autoincrement())
+  title            String  @db.VarChar(120)
+  slug             String  @unique @db.VarChar(140)
+  shortDescription String  @db.VarChar(250)
+  description      String
+  imageUrl         String?
+  demoUrl          String?
+  repositoryUrl    String?
+  featured         Boolean @default(false)
+  published        Boolean @default(true)
+  displayOrder     Int     @default(0)
+
+  technologies ProjectTechnology[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([published, displayOrder])
+  @@map("projects")
+}
+
+model Technology {
+  id   Int    @id @default(autoincrement())
+  name String @unique @db.VarChar(60)
+  slug String @unique @db.VarChar(70)
+
+  projects ProjectTechnology[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("technologies")
+}
+
+model ProjectTechnology {
+  projectId    Int
+  technologyId Int
+
+  project    Project    @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  technology Technology @relation(fields: [technologyId], references: [id], onDelete: Cascade)
+
+  @@id([projectId, technologyId])
+  @@map("project_technologies")
 }

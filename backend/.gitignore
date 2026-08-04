@@ -1,0 +1,37 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+.dev.vars
+
+# Prisma
+src/generated/
+.prisma/
+
+# Cloudflare Workers
+.wrangler/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cobertura
+coverage/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Archivos temporales
+*.tmp
+*.temp
