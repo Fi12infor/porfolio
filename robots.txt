@@ -1,0 +1,108 @@
+# ======================================
+# robots.txt - ismartin.com
+# ======================================
+
+User-agent: *
+Allow: /
+
+# Directorios privados
+Disallow: /admin/
+Disallow: /administrator/
+Disallow: /dashboard/
+Disallow: /panel/
+Disallow: /cpanel/
+Disallow: /control-panel/
+Disallow: /private/
+Disallow: /internal/
+Disallow: /secure/
+Disallow: /staff/
+Disallow: /users/
+Disallow: /account/
+Disallow: /accounts/
+Disallow: /login/
+Disallow: /register/
+Disallow: /auth/
+Disallow: /oauth/
+Disallow: /session/
+
+# API
+Disallow: /api/
+Disallow: /api/v1/
+Disallow: /api/v2/
+Disallow: /graphql/
+
+# Desarrollo
+Disallow: /dev/
+Disallow: /test/
+Disallow: /testing/
+Disallow: /staging/
+Disallow: /beta/
+Disallow: /preview/
+Disallow: /sandbox/
+
+# Backups y temporales
+Disallow: /backup/
+Disallow: /backups/
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /logs/
+Disallow: /old/
+Disallow: /archive/
+
+# Configuración
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /.vscode/
+Disallow: /.idea/
+Disallow: /.well-known/
+Disallow: /config/
+Disallow: /configs/
+Disallow: /secrets/
+
+# Código fuente
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /vendor/
+
+# Archivos sensibles
+Disallow: /*.env$
+Disallow: /*.env.*$
+Disallow: /*.ini$
+Disallow: /*.conf$
+Disallow: /*.config$
+Disallow: /*.sql$
+Disallow: /*.sqlite$
+Disallow: /*.db$
+Disallow: /*.bak$
+Disallow: /*.backup$
+Disallow: /*.old$
+Disallow: /*.log$
+Disallow: /*.zip$
+Disallow: /*.tar$
+Disallow: /*.gz$
+Disallow: /*.7z$
+
+# Bloquear bots de IA
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+Sitemap: https://ismartin.com/sitemap.xml
