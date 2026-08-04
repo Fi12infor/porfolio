@@ -1,5 +1,5 @@
 async function FetchProjects() {
-  const res = await fetch("http://localhost:3001/api/projects/");
+  const res = await fetch("/api/projects");
   if (!res.ok) {
     throw new Error(`HTTP ${res.status}`);
   }
