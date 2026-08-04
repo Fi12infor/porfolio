@@ -8,9 +8,15 @@ export const publicApiLimiter = rateLimit({
   legacyHeaders: false,
 
   keyGenerator: (req) => {
-    const cloudflareIp = req.headers["cf-connecting-ip"];
+    const cloudflareIp = req.get("cf-connecting-ip");
+    const forwardedIp = req.get("x-forwarded-for")?.split(",")[0]?.trim();
+    const ip = cloudflareIp || forwardedIp || req.ip;
 
-    return ipKeyGenerator(cloudflareIp || req.ip);
+    if (!ip) {
+      return "unknown-client";
+    }
+
+    return ipKeyGenerator(ip);
   },
 
   message: {
