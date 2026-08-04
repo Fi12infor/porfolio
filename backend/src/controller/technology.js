@@ -1,9 +1,10 @@
 import { Router } from "express";
 import prisma from "../config/prisma.js";
+import { requireAdmin } from "../middleware/middleware.js";
 
 const technologyRouter = Router();
 
-technologyRouter.post("/", async (req, res) => {
+technologyRouter.post("/", requireAdmin, async (req, res) => {
   const { name, slug } = req.body;
 
   if (!name || !slug) {
