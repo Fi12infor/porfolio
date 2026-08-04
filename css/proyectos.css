@@ -1,0 +1,229 @@
+/* variables de colores */
+:root {
+  --color-principal: #25a3ff;
+  --text-color: #131b2e;
+  --text-secundary: #404753;
+  --text-pills: #57657a;
+  --text-pills-dark: #447fb5;
+  --dark-text-color: #e2e2e6;
+  --dark-text-secundary: #8d8e96;
+  --light-bg: #faf8ff;
+  --dark-bg: #0f1115;
+  --light-card-bg: #f2f3ff;
+  --light-pills: #d5e3fc;
+  --dark-card-bg: #2e3235;
+  --dark-pills: #33353a;
+  --light-bg-header: #efeff2;
+  --dark-bg-header: #101216;
+  --light-header-border: #c0c7d5;
+  --dark-header-border: #1b1e22;
+  --btn-gradient: linear-gradient(
+    144deg,
+    rgba(77, 171, 255, 1) 0%,
+    rgba(37, 99, 235, 1) 100%
+  );
+}
+
+.proyectos {
+  width: 98rem;
+  margin: 8rem auto;
+  scroll-margin-top: 90px;
+}
+
+.proyectos h2 {
+  font-size: 2.4rem;
+  color: var(--text-color);
+}
+
+.proyectos p {
+  color: var(--text-secundary);
+  width: 50rem;
+  margin-top: 1rem;
+}
+
+.project-cards .card {
+  width: 40rem;
+  height: 46rem;
+  display: flex;
+  align-items: center;
+  background: var(--light-card-bg);
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  gap: 4rem;
+  margin: 4rem auto;
+}
+
+.project-cards .card .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-cards .card .title {
+  margin-top: 1rem;
+  height: 5rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.project-cards .card .description {
+  text-align: center;
+  width: 30rem;
+  height: 8rem;
+  color: var(--text-secundary);
+}
+
+.project-cards .card img {
+  width: 39.9rem;
+  height: 20rem;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.project-cards .card .btns {
+  display: flex;
+  gap: 2rem;
+}
+
+.project-cards .card .stack {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.project-cards .card .stack .stack-pill {
+  padding: 0.6rem 2rem;
+  background: var(--light-pills);
+  color: var(--text-pills);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: default;
+}
+
+/* --- Dark Mode --- */
+.dark .proyectos h2 {
+  color: var(--dark-text-color);
+}
+
+.dark .proyectos p {
+  color: var(--dark-text-secundary);
+}
+
+.dark .project-cards .card {
+  background: var(--dark-card-bg);
+}
+
+.dark .project-cards .card .stack .stack-pill {
+  background: var(--dark-pills);
+  color: var(--text-pills-dark);
+}
+
+.dark .project-cards .card .title {
+  color: var(--dark-text-color);
+}
+
+.dark .project-cards .card .description {
+  color: var(--dark-text-secundary);
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .proyectos {
+    width: 20rem;
+  }
+
+  .proyectos h2 {
+    font-size: 1.4rem;
+    color: var(--text-color);
+  }
+
+  .proyectos p {
+    color: var(--text-secundary);
+    width: 20rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  .project-cards .card {
+    width: 18rem;
+    height: 36rem;
+    display: flex;
+    align-items: center;
+    background: var(--light-card-bg);
+  }
+
+  .project-cards {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 6rem;
+    margin: 4rem auto;
+  }
+
+  .project-cards .card .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-cards .card .title {
+    margin-top: 1rem;
+    height: fit-content;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1rem;
+    width: 17rem;
+  }
+
+  .project-cards .card .description {
+    text-align: center;
+    width: 16rem;
+    height: 8rem;
+    color: var(--text-secundary);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-cards .card img {
+    width: 18rem;
+    height: 12rem;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+  }
+
+  .project-cards .card .btns {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .project-cards .card .stack {
+    display: grid;
+    grid-template-columns: repeat(2, 0.8fr);
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    height: 4rem;
+  }
+
+  .project-cards .card .stack .stack-pill {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding: 0.2rem 0.6rem;
+    background: var(--light-pills);
+    color: var(--text-pills);
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    cursor: default;
+  }
+}

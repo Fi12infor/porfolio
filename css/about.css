@@ -1,0 +1,122 @@
+/* variables de colores */
+:root {
+  --color-principal: #25a3ff;
+  --text-color: #131b2e;
+  --text-secundary: #404753;
+  --text-pills: #57657a;
+  --text-pills-dark: #447fb5;
+  --dark-text-color: #e2e2e6;
+  --dark-text-secundary: #8d8e96;
+  --light-bg: #faf8ff;
+  --dark-bg: #0f1115;
+  --light-card-bg: #f2f3ff;
+  --light-pills: #d5e3fc;
+  --dark-card-bg: #2e3235;
+  --dark-pills: #33353a;
+  --light-bg-header: #efeff2;
+  --dark-bg-header: #101216;
+  --light-header-border: #c0c7d5;
+  --dark-header-border: #1b1e22;
+  --btn-gradient: linear-gradient(
+    144deg,
+    rgba(77, 171, 255, 1) 0%,
+    rgba(37, 99, 235, 1) 100%
+  );
+}
+
+/* Estilos sección sobre mi */
+
+.sobre-mi {
+  width: 98rem;
+  margin: 10rem auto;
+  scroll-margin-top: 90px;
+}
+
+.sobre-mi h2 {
+  font-size: 2.4rem;
+  color: var(--text-color);
+}
+
+.sobre-mi p {
+  color: var(--text-secundary);
+  width: 80rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.techs-pills {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.techs-pills .pill {
+  padding: 0.5rem 2rem;
+  background: var(--light-pills);
+  color: var(--text-pills);
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+.sobre-mi .btn {
+  width: fit-content;
+  margin-top: 3rem;
+}
+
+/* --- Dark Mode --- */
+.dark .sobre-mi h2 {
+  color: var(--dark-text-color);
+}
+
+.dark .sobre-mi p {
+  color: var(--dark-text-secundary);
+}
+
+.dark .techs-pills .pill {
+  background: var(--dark-pills);
+  color: var(--text-pills-dark);
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .sobre-mi {
+    width: 20rem;
+    margin: 10rem auto;
+  }
+
+  .sobre-mi h2 {
+    font-size: 1.4rem;
+    color: var(--text-color);
+  }
+
+  .sobre-mi p {
+    color: var(--text-secundary);
+    width: 18rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
+
+  .techs-pills {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .techs-pills .pill {
+    padding: 0.5rem 1.4rem;
+    background: var(--light-pills);
+    color: var(--text-pills);
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: default;
+  }
+
+  .sobre-mi .btn {
+    width: fit-content;
+    margin: 3rem auto;
+  }
+}
