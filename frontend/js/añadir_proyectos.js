@@ -13,7 +13,6 @@ async function LoadProjects() {
   const proyectosContainer = document.getElementById("projectSection");
   const stackPillContainer = document.querySelectorAll(".stackPill");
   proyectos.forEach((proyecto) => {
-    console.log(proyecto.technologies);
     proyectosContainer.innerHTML += `
         <div class="card" key="${proyecto.id}">
             <img src="${proyecto.imageUrl}" alt="">
