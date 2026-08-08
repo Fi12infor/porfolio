@@ -33,6 +33,32 @@ projectRouter.get("/", async (req, res) => {
   }
 });
 
+projectRouter.get("/all", async (req, res) => {
+  const prisma = createPrisma();
+  try {
+    const projects = await prisma.project.findMany({
+      orderBy: {
+        displayOrder: "asc",
+      },
+      include: {
+        technologies: {
+          include: {
+            technology: true,
+          },
+        },
+      },
+    });
+
+    res.status(200).json(projects);
+  } catch (error) {
+    console.error(error);
+
+    res.status(500).json({
+      error: "No se pudieron obtener los proyectos.",
+    });
+  }
+});
+
 projectRouter.post("/", requireAdmin, async (req, res) => {
   const prisma = createPrisma();
   const {
