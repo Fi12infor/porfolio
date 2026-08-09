@@ -292,4 +292,38 @@ projectRouter.patch("/:id", requireAdmin, async (req, res) => {
   }
 });
 
+projectRouter.delete("/:id", requireAdmin, async (req, res) => {
+  const prisma = createPrisma();
+  const id = Number(req.params.id);
+
+  if (!Number.isInteger(id) || !id || id <= 0) {
+    return res.status(400).json({
+      error: "El id debe ser un número entero.",
+    });
+  }
+
+  try {
+    const deletedProject = await prisma.project.delete({
+      where: { id },
+    });
+
+    return res.status(200).json({
+      message: "Proyecto eliminado correctamente.",
+      data: deletedProject,
+    });
+  } catch (error) {
+    console.error(error);
+
+    if (error.code === "P2025") {
+      return res.status(404).json({
+        error: "El proyecto no existe.",
+      });
+    }
+
+    res.status(500).json({
+      error: "No se pudo eliminar el proyecto.",
+    });
+  }
+});
+
 export default projectRouter;

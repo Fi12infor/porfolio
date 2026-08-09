@@ -16,7 +16,7 @@ app.use(
       "http://localhost:3000",
       "http://localhost:5173",
     ],
-    methods: ["GET", "POST", "PATCH"],
+    methods: ["GET", "POST", "PATCH", "DELETE"],
   }),
 );
 // app.use(compression());
